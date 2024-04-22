@@ -5,7 +5,7 @@ body, html {
 }
 
 .login-container {
-    background-image: linear-gradient(to right, #007BFF, #00BFFF);
+    background-image: linear-gradient(to right, #4FACFE, #00C9A7);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -27,8 +27,8 @@ body, html {
 
 .login-form {
     position: relative;
-    height: 50%;
-    width: 30%;
+    height: 60%;
+    width: 25%;
     padding: 40px;
     background: white;
     border-radius: 10px;
@@ -54,7 +54,7 @@ body, html {
 .login-form button {
     width: 100%;
     padding: 10px;
-    background-image: linear-gradient(to right, #007BFF, #00BFFF);
+    background-image: linear-gradient(to right, #4FACFE, #00C9A7);
     color: white;
     border: none;
     border-radius: 20px;
@@ -77,6 +77,7 @@ body, html {
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
+    opacity: 0.6;
 }
 
 input[type="text"],
