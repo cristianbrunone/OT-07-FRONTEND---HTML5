@@ -1,0 +1,137 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    background-image: linear-gradient(to right, #007BFF, #00BFFF);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5); /* Camada escura para melhor contraste */
+}
+
+.login-form {
+    position: relative;
+    height: 50%;
+    width: 30%;
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 2; /* Garante que o formulário fique acima do pseudo-elemento ::before */
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que padding não aumente o tamanho do input */
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-image: linear-gradient(to right, #007BFF, #00BFFF);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.icon-user {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+input[type="text"],
+input[type="password"] {
+    padding-left: 30px; /* Espacio para el icono */
+}
+
+
+
+
+.social-text{
+    text-align: center; /* Alinea el texto horizontalmente */
+    margin-bottom: 10px; /* Agrega espacio debajo del texto */
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Alineación de los iconos y el texto */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Espacio entre el texto y los iconos */
+}
+
+.social-icons p {
+    margin-right: 10px; /* Espacio entre el texto y el primer icono */
+}
+
+/* Estilo de los iconos */
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Tamaño del contenedor del icono */
+    height: 40px; /* Tamaño del contenedor del icono */
+    background-color: rgba(0, 0, 0, 0.1); /* Color de fondo del contenedor del icono */
+    border-radius: 50%; 
+    margin-right: 10px; /* Espacio entre los iconos */
+    text-decoration: none;
+}
+
+.icon-facebook {
+    background-color: #3b5998; /* Azul de Facebook */
+}
+
+.icon-twitter {
+    background-color: #1da1f2; /* Azul de Twitter */
+}
+
+.icon-google {
+    background-color: #db4437; /* Rojo de Google */
+}
+
+.icon i {
+    font-size: 20px; /* Tamaño del icono */
+    color: #fff; /* Color del icono */
+}
